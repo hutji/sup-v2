@@ -1,7 +1,6 @@
-from users.domain.repositories.role_repository import IRoleRepository
 from users.data.entities.role_entity import RoleEntity
-
 from users.data.models.models import Role
+from users.domain.repositories.role_repository import IRoleRepository
 
 
 class RoleRepository(IRoleRepository):

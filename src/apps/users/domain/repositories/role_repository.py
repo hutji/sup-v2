@@ -1,4 +1,5 @@
 import abc
+
 from users.data.entities.role_entity import RoleEntity
 
 
