@@ -1,4 +1,4 @@
-from users.data.entities.role_entity import RoleEntity
+from users.domain.entities.role_entity import RoleEntity
 from users.data.models.models import Role
 
 
