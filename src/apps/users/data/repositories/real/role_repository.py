@@ -1,6 +1,7 @@
-from users.domain.entities.role_entity import RoleEntity
 from users.data.mappers import map_role
 from users.data.models.models import Role
+from users.domain.entities.role_entity import RoleEntity
+
 from src.apps.users.domain.repositories.role_repository import IRoleRepository
 
 
@@ -11,6 +12,6 @@ class RoleRepository(IRoleRepository):
             return RoleEntity.from_model(role_obj)
         except Role.DoesNotExist:
             raise ValueError
-        
-        #role_entity = map_role(role_obj) if role_obj else None:
-        #return role_entity
+
+        # role_entity = map_role(role_obj) if role_obj else None:
+        # return role_entity
